@@ -2,8 +2,8 @@ package testobjects;
 
 public class TestUser {
 	
-	private String email = "tanglewoodnumbers2008@getnada.com";
-	private String pword = "StarliteWalker#94";
+	private String email = "wendellborton@getnada.com";
+	private String pword = "BJSSTest";
 	private boolean loggedIn = false;
 	
 	
