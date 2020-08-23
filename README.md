@@ -3,6 +3,7 @@
 
 Automated Test Suite for automationpractice.com using Cucumber and Selenium WebDriver (Java).
 
+
 ## Getting Started
 
 ### Running the tests
@@ -18,8 +19,10 @@ Browsers currently accepted are `chrome` and `firefox`. Please note that there a
 
 ### Reporting
 
-HTML report is produced at the end of each run and saved to `target/htmlreports`
-Screencaps of test failures are saved under test name with a timestamp in `target/screenshots`
+HTML report is produced at the end of each run and saved to `target\htmlreports`
+
+Screen captures of test failures are saved under the scenario name with a timestamp in `target\screenshots`
+
 
 ## General Info
 
@@ -34,13 +37,14 @@ Written in Java 11 in Eclipse IDE.
 
 Feature test steps are defined in the feature files: `src\test\java\features`
 
+
 ## Future improvements
 
 * Reduce use of XPath and CSS selectors. These have been used sparingly where another locator could not be found or for some other reason could not be used. In particular, these have been used when parsing tables on the Order History Page.
 * Decouple item number as basket item index from item number as element identifier. Where “item 1” is referenced in the feature files, this is interpreted as both the first item in the user’s basket test object (TestItem), as well as the first product listed on the webpage. These could be decoupled by giving the TestItem object its own id and storing some identifier for the product as an object variable.
 * Check for and remove any test dependencies e.g. where one test must follow another. Known test dependencies include:
-** ReviewAddMessage test requires items to have been purchased
-** All tests rely on the user logon existing in the system
+  * ReviewAddMessage test requires items to have been purchased
+  * All tests rely on the user logon existing in the system
 * Extend browser support (Edge, IE, etc.). Firefox is supported but has shown up issues particularly where JavaScript components perform differently than in Chrome. These issues could be worked through with more time spent on the task, however this was not explicitly in the scope of the task.
 * Improve handling of WebDriver object. The WebDriver object is currently passed around a lot, particularly to methods that require it to wait for an object to be visible or clickable. This can presumably be improved but I have not determined the best way to handle the driver object.
 * WebDriver files as dependencies instead of included in the resources. Originally the WebDriver was accessed via an environment variable but the WebDrivers were bundled into the test resources for ease of use.
