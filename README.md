@@ -10,7 +10,7 @@ Automated Test Suite for automationpractice.com using Cucumber and Selenium WebD
 
 WebDrivers are held in `src\test\resources\webdrivers`
 
-To run all tests, run the project as a Maven test with the chosen browser as -Dbrowser argument:
+To run all tests, run the project as a Maven test with the chosen browser as `-Dbrowser` argument:
 ```
 mvn test -Dbrowser=chrome
 ```
@@ -32,6 +32,7 @@ This project uses:
 * ChromeDriver - WebDriver for Chrome http://chromedriver.chromium.org/
 * GeckoDriver - WebDriver for Firefox https://github.com/mozilla/geckodriver/releases
 * JUnit - Test framework https://junit.org/junit4/
+* Cucumber - BDD framework https://cucumber.io/
 
 Written in Java 11 in Eclipse IDE.
 
