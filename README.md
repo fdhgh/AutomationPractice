@@ -15,7 +15,7 @@ To run all tests, run the project as a Maven test with the chosen browser as -Db
 mvn test -Dbrowser=chrome
 ```
 
-Browsers currently accepted are `chrome` and `firefox`. Please note that there are currently issues when running in Firefox, so Chrome is recommended. 
+Browsers currently accepted are `chrome` and `firefox`. Please note that there are currently issues when running in Firefox, so Chrome is recommended. The version of the driver must correspond to the version of the browser installed on your system, per the recommendations on the developer's website.
 
 ### Reporting
 
