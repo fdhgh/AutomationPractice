@@ -41,6 +41,7 @@ Feature test steps are defined in the feature files: `src\test\java\features`
 
 ## Future improvements
 
+* Abstract the PageFactory initialisation for the page objects
 * Reduce use of XPath and CSS selectors. These have been used sparingly where another locator could not be found or for some other reason could not be used. In particular, these have been used when parsing tables on the Order History Page.
 * Decouple item number as basket item index from item number as element identifier. Where “item 1” is referenced in the feature files, this is interpreted as both the first item in the user’s basket test object (TestItem), as well as the first product listed on the webpage. These could be decoupled by giving the TestItem object its own id and storing some identifier for the product as an object variable.
 * Check for and remove any test dependencies e.g. where one test must follow another. Known test dependencies include:
